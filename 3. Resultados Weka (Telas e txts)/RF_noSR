@@ -1,0 +1,47 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     haberman
+Instances:    306
+Attributes:   4
+              Age_of_patient_at_time_of_operation
+              Patients_year_of_operation
+              Number_of_positive_axillary_nodes_detected
+              Survival_status
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         211               68.9542 %
+Incorrectly Classified Instances        95               31.0458 %
+Kappa statistic                          0.1522
+Mean absolute error                      0.3379
+Root mean squared error                  0.4711
+Relative absolute error                 86.6255 %
+Root relative squared error            106.7699 %
+Total Number of Instances              306     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,822    0,679    0,771      0,822    0,796      0,154    0,646     0,832     1
+                 0,321    0,178    0,394      0,321    0,354      0,154    0,646     0,366     2
+Weighted Avg.    0,690    0,546    0,671      0,690    0,679      0,154    0,646     0,709     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 185  40 |   a = 1
+  55  26 |   b = 2
+

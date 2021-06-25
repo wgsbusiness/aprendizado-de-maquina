@@ -1,0 +1,207 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     haberman
+Instances:    306
+Attributes:   4
+              Age_of_patient_at_time_of_operation
+              Patients_year_of_operation
+              Number_of_positive_axillary_nodes_detected
+              Survival_status
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -3.814093825309174
+    Node 2    3.759461693169728
+    Node 3    1.5188716392361978
+    Node 4    4.247653369560023
+    Node 5    2.0737867460802417
+    Node 6    0.4531019487146647
+    Node 7    4.831230976767999
+    Node 8    4.2285941725532386
+    Node 9    4.185151536193964
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    3.814094538483964
+    Node 2    -3.7595940112248707
+    Node 3    -1.5185670726925307
+    Node 4    -4.246810368336606
+    Node 5    -2.0739792848266196
+    Node 6    -0.452598538156878
+    Node 7    -4.831234882861867
+    Node 8    -4.22861776663546
+    Node 9    -4.185185311461021
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.2991828422251932
+    Attrib Age_of_patient_at_time_of_operation    6.765682485517186
+    Attrib Patients_year_of_operation=58    4.229658370449669
+    Attrib Patients_year_of_operation=59    2.0837879681372686
+    Attrib Patients_year_of_operation=60    0.5557410716767891
+    Attrib Patients_year_of_operation=61    0.7148755389140576
+    Attrib Patients_year_of_operation=62    1.827357759518158
+    Attrib Patients_year_of_operation=63    -0.9441218006868093
+    Attrib Patients_year_of_operation=64    2.22755750186416
+    Attrib Patients_year_of_operation=65    -2.0997282857996735
+    Attrib Patients_year_of_operation=66    0.5296450102161344
+    Attrib Patients_year_of_operation=67    1.2897896013470491
+    Attrib Patients_year_of_operation=68    1.8425618448562946
+    Attrib Patients_year_of_operation=69    0.42997989556936794
+    Attrib Number_of_positive_axillary_nodes_detected    -8.488206235795547
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.9737372915713475
+    Attrib Age_of_patient_at_time_of_operation    -3.3886562342132316
+    Attrib Patients_year_of_operation=58    2.1128255072988282
+    Attrib Patients_year_of_operation=59    -0.6478113085997473
+    Attrib Patients_year_of_operation=60    2.4041730106325656
+    Attrib Patients_year_of_operation=61    0.9793643335880304
+    Attrib Patients_year_of_operation=62    0.9866039035979273
+    Attrib Patients_year_of_operation=63    2.1007357390908985
+    Attrib Patients_year_of_operation=64    -0.5057895404078125
+    Attrib Patients_year_of_operation=65    1.4396066551046693
+    Attrib Patients_year_of_operation=66    -0.9537548111091573
+    Attrib Patients_year_of_operation=67    0.7944264650429125
+    Attrib Patients_year_of_operation=68    1.5091777706956386
+    Attrib Patients_year_of_operation=69    -0.5148071906294843
+    Attrib Number_of_positive_axillary_nodes_detected    -4.833975918279496
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.7279786584278594
+    Attrib Age_of_patient_at_time_of_operation    5.931595152057304
+    Attrib Patients_year_of_operation=58    -1.5808764173814396
+    Attrib Patients_year_of_operation=59    2.9404604550689895
+    Attrib Patients_year_of_operation=60    1.3533827262855063
+    Attrib Patients_year_of_operation=61    1.212527324674685
+    Attrib Patients_year_of_operation=62    3.2087287072387847
+    Attrib Patients_year_of_operation=63    -0.13843499051568786
+    Attrib Patients_year_of_operation=64    2.5271743133157827
+    Attrib Patients_year_of_operation=65    -1.5483706033397824
+    Attrib Patients_year_of_operation=66    1.9987481453351605
+    Attrib Patients_year_of_operation=67    3.5980495467215428
+    Attrib Patients_year_of_operation=68    2.452013151335608
+    Attrib Patients_year_of_operation=69    1.1809706575202958
+    Attrib Number_of_positive_axillary_nodes_detected    -12.108315375297945
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.3023291922866687
+    Attrib Age_of_patient_at_time_of_operation    0.6832544024119953
+    Attrib Patients_year_of_operation=58    1.0189405112176202
+    Attrib Patients_year_of_operation=59    -0.5726102712252473
+    Attrib Patients_year_of_operation=60    4.462854816545995
+    Attrib Patients_year_of_operation=61    0.9508159986326239
+    Attrib Patients_year_of_operation=62    1.884101124842609
+    Attrib Patients_year_of_operation=63    0.44223881186022235
+    Attrib Patients_year_of_operation=64    0.9815158471287708
+    Attrib Patients_year_of_operation=65    -0.07638145947036945
+    Attrib Patients_year_of_operation=66    0.11847078784331011
+    Attrib Patients_year_of_operation=67    2.2407418649898583
+    Attrib Patients_year_of_operation=68    1.3729205503117516
+    Attrib Patients_year_of_operation=69    -0.23493979943090182
+    Attrib Number_of_positive_axillary_nodes_detected    -7.999519496508724
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.962543945589044
+    Attrib Age_of_patient_at_time_of_operation    -0.38568504176782503
+    Attrib Patients_year_of_operation=58    2.222799451855998
+    Attrib Patients_year_of_operation=59    -0.15720050563502974
+    Attrib Patients_year_of_operation=60    1.740638315027746
+    Attrib Patients_year_of_operation=61    0.73300017877093
+    Attrib Patients_year_of_operation=62    0.12112903082935665
+    Attrib Patients_year_of_operation=63    1.6916470688107388
+    Attrib Patients_year_of_operation=64    0.4578249132317331
+    Attrib Patients_year_of_operation=65    0.18908597601537638
+    Attrib Patients_year_of_operation=66    -0.07027498943881387
+    Attrib Patients_year_of_operation=67    0.8804768186449174
+    Attrib Patients_year_of_operation=68    1.5643837819722615
+    Attrib Patients_year_of_operation=69    -0.09204697902919044
+    Attrib Number_of_positive_axillary_nodes_detected    -4.364232411662253
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.3854952997516243
+    Attrib Age_of_patient_at_time_of_operation    -11.999664467284283
+    Attrib Patients_year_of_operation=58    0.8821571110376689
+    Attrib Patients_year_of_operation=59    -1.5198620964926928
+    Attrib Patients_year_of_operation=60    3.836704583481138
+    Attrib Patients_year_of_operation=61    3.2148703466710136
+    Attrib Patients_year_of_operation=62    0.5180928021420522
+    Attrib Patients_year_of_operation=63    4.000590311786463
+    Attrib Patients_year_of_operation=64    -0.026436148398128516
+    Attrib Patients_year_of_operation=65    1.2709589972270368
+    Attrib Patients_year_of_operation=66    -1.8893870442640595
+    Attrib Patients_year_of_operation=67    0.2943132609641535
+    Attrib Patients_year_of_operation=68    3.4705214055008247
+    Attrib Patients_year_of_operation=69    0.059068187608166886
+    Attrib Number_of_positive_axillary_nodes_detected    -5.923497573369834
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.004899915866887306
+    Attrib Age_of_patient_at_time_of_operation    14.207856097794942
+    Attrib Patients_year_of_operation=58    -6.784936094821838
+    Attrib Patients_year_of_operation=59    -0.3393340624062642
+    Attrib Patients_year_of_operation=60    -0.8378449562382067
+    Attrib Patients_year_of_operation=61    4.345766461998992
+    Attrib Patients_year_of_operation=62    -2.106192163013665
+    Attrib Patients_year_of_operation=63    2.080630657229259
+    Attrib Patients_year_of_operation=64    -2.8113784202711454
+    Attrib Patients_year_of_operation=65    1.7709706851434477
+    Attrib Patients_year_of_operation=66    4.779023627346415
+    Attrib Patients_year_of_operation=67    -3.2892418933626457
+    Attrib Patients_year_of_operation=68    0.7556292928370032
+    Attrib Patients_year_of_operation=69    2.6672402889466387
+    Attrib Number_of_positive_axillary_nodes_detected    5.016929179134337
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.775871598462673
+    Attrib Age_of_patient_at_time_of_operation    -16.391211908942005
+    Attrib Patients_year_of_operation=58    -1.72262807368467
+    Attrib Patients_year_of_operation=59    2.461121138281538
+    Attrib Patients_year_of_operation=60    -0.21619878620802715
+    Attrib Patients_year_of_operation=61    -0.3398731573556353
+    Attrib Patients_year_of_operation=62    4.445367450899211
+    Attrib Patients_year_of_operation=63    0.24474801111815445
+    Attrib Patients_year_of_operation=64    4.332463098461611
+    Attrib Patients_year_of_operation=65    -1.753727781611731
+    Attrib Patients_year_of_operation=66    5.416103509862796
+    Attrib Patients_year_of_operation=67    3.700340922982274
+    Attrib Patients_year_of_operation=68    -0.3979832180495151
+    Attrib Patients_year_of_operation=69    1.960815203730548
+    Attrib Number_of_positive_axillary_nodes_detected    -23.096993205428394
+Class 1
+    Input
+    Node 0
+Class 2
+    Input
+    Node 1
+
+
+Time taken to build model: 0.32 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         212               69.281  %
+Incorrectly Classified Instances        94               30.719  %
+Kappa statistic                          0.1576
+Mean absolute error                      0.3366
+Root mean squared error                  0.4705
+Relative absolute error                 86.2786 %
+Root relative squared error            106.6486 %
+Total Number of Instances              306     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,827    0,679    0,772      0,827    0,798      0,159    0,649     0,830     1
+                 0,321    0,173    0,400      0,321    0,356      0,159    0,649     0,390     2
+Weighted Avg.    0,693    0,545    0,673      0,693    0,681      0,159    0,649     0,714     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 186  39 |   a = 1
+  55  26 |   b = 2
+

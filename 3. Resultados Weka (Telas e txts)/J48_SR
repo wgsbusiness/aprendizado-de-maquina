@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     haberman-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 1 -N 5
+Instances:    306
+Attributes:   3
+              Patients_year_of_operation
+              Number_of_positive_axillary_nodes_detected
+              Survival_status
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Number_of_positive_axillary_nodes_detected <= 4: 1 (230.0/42.0)
+Number_of_positive_axillary_nodes_detected > 4
+|   Patients_year_of_operation = 58: 2 (6.0/2.0)
+|   Patients_year_of_operation = 59
+|   |   Number_of_positive_axillary_nodes_detected <= 10: 1 (4.0)
+|   |   Number_of_positive_axillary_nodes_detected > 10: 2 (4.0/1.0)
+|   Patients_year_of_operation = 60: 2 (5.0/2.0)
+|   Patients_year_of_operation = 61: 1 (8.0/2.0)
+|   Patients_year_of_operation = 62: 2 (7.0/2.0)
+|   Patients_year_of_operation = 63: 2 (8.0/3.0)
+|   Patients_year_of_operation = 64: 1 (7.0/3.0)
+|   Patients_year_of_operation = 65: 2 (9.0/2.0)
+|   Patients_year_of_operation = 66: 1 (6.0/2.0)
+|   Patients_year_of_operation = 67: 1 (6.0/2.0)
+|   Patients_year_of_operation = 68: 2 (2.0)
+|   Patients_year_of_operation = 69: 1 (4.0/1.0)
+
+Number of Leaves  : 	14
+
+Size of the tree : 	17
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         223               72.8758 %
+Incorrectly Classified Instances        83               27.1242 %
+Kappa statistic                          0.0914
+Mean absolute error                      0.3734
+Root mean squared error                  0.4487
+Relative absolute error                 95.7186 %
+Root relative squared error            101.6975 %
+Total Number of Instances              306     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,947    0,877    0,750      0,947    0,837      0,120    0,553     0,758     1
+                 0,123    0,053    0,455      0,123    0,194      0,120    0,553     0,306     2
+Weighted Avg.    0,729    0,659    0,672      0,729    0,667      0,120    0,553     0,638     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 213  12 |   a = 1
+  71  10 |   b = 2
+

@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     haberman-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 1 -N 5
+Instances:    306
+Attributes:   3
+              Patients_year_of_operation
+              Number_of_positive_axillary_nodes_detected
+              Survival_status
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         220               71.8954 %
+Incorrectly Classified Instances        86               28.1046 %
+Kappa statistic                          0.1425
+Mean absolute error                      0.3474
+Root mean squared error                  0.5221
+Relative absolute error                 89.0428 %
+Root relative squared error            118.3345 %
+Total Number of Instances              306     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,898    0,778    0,762      0,898    0,824      0,155    0,522     0,768     1
+                 0,222    0,102    0,439      0,222    0,295      0,155    0,522     0,311     2
+Weighted Avg.    0,719    0,599    0,677      0,719    0,684      0,155    0,522     0,647     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 202  23 |   a = 1
+  63  18 |   b = 2
+

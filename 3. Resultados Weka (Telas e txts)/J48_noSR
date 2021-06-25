@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     haberman
+Instances:    306
+Attributes:   4
+              Age_of_patient_at_time_of_operation
+              Patients_year_of_operation
+              Number_of_positive_axillary_nodes_detected
+              Survival_status
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Number_of_positive_axillary_nodes_detected <= 4: 1 (230.0/42.0)
+Number_of_positive_axillary_nodes_detected > 4
+|   Patients_year_of_operation = 58
+|   |   Age_of_patient_at_time_of_operation <= 38: 1 (2.0)
+|   |   Age_of_patient_at_time_of_operation > 38: 2 (4.0)
+|   Patients_year_of_operation = 59
+|   |   Number_of_positive_axillary_nodes_detected <= 10: 1 (4.0)
+|   |   Number_of_positive_axillary_nodes_detected > 10: 2 (4.0/1.0)
+|   Patients_year_of_operation = 60
+|   |   Age_of_patient_at_time_of_operation <= 52: 1 (3.0/1.0)
+|   |   Age_of_patient_at_time_of_operation > 52: 2 (2.0)
+|   Patients_year_of_operation = 61: 1 (8.0/2.0)
+|   Patients_year_of_operation = 62: 2 (7.0/2.0)
+|   Patients_year_of_operation = 63: 2 (8.0/3.0)
+|   Patients_year_of_operation = 64: 1 (7.0/3.0)
+|   Patients_year_of_operation = 65
+|   |   Age_of_patient_at_time_of_operation <= 58: 2 (6.0)
+|   |   Age_of_patient_at_time_of_operation > 58: 1 (3.0/1.0)
+|   Patients_year_of_operation = 66: 1 (6.0/2.0)
+|   Patients_year_of_operation = 67
+|   |   Age_of_patient_at_time_of_operation <= 46: 1 (3.0)
+|   |   Age_of_patient_at_time_of_operation > 46: 2 (3.0/1.0)
+|   Patients_year_of_operation = 68: 2 (2.0)
+|   Patients_year_of_operation = 69: 1 (4.0/1.0)
+
+Number of Leaves  : 	18
+
+Size of the tree : 	25
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         223               72.8758 %
+Incorrectly Classified Instances        83               27.1242 %
+Kappa statistic                          0.1526
+Mean absolute error                      0.3572
+Root mean squared error                  0.4624
+Relative absolute error                 91.5564 %
+Root relative squared error            104.8123 %
+Total Number of Instances              306     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,916    0,790    0,763      0,916    0,832      0,172    0,564     0,750     1
+                 0,210    0,084    0,472      0,210    0,291      0,172    0,564     0,344     2
+Weighted Avg.    0,729    0,603    0,686      0,729    0,689      0,172    0,564     0,642     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 206  19 |   a = 1
+  64  17 |   b = 2
+

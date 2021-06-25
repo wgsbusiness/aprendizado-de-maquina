@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SGD -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1
+Relation:     haberman-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 1 -N 5
+Instances:    306
+Attributes:   3
+              Patients_year_of_operation
+              Number_of_positive_axillary_nodes_detected
+              Survival_status
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Loss function: Hinge loss (SVM)
+
+Survival_status = 
+
+         0.02   (normalized) Patients_year_of_operation=58
+ +      -0.04   (normalized) Patients_year_of_operation=59
+ +      -0.09   (normalized) Patients_year_of_operation=60
+ +      -0.4898 (normalized) Patients_year_of_operation=61
+ +      -0.03   (normalized) Patients_year_of_operation=62
+ +      -0.09   (normalized) Patients_year_of_operation=63
+ +      -0.05   (normalized) Patients_year_of_operation=64
+ +       0.09   (normalized) Patients_year_of_operation=65
+ +      -0.12   (normalized) Patients_year_of_operation=66
+ +      -0.1599 (normalized) Patients_year_of_operation=67
+ +      -0.07   (normalized) Patients_year_of_operation=68
+ +      -0.06   (normalized) Patients_year_of_operation=69
+ +       2.7609 (normalized) Number_of_positive_axillary_nodes_detected
+ -       1.09  
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         218               71.2418 %
+Incorrectly Classified Instances        88               28.7582 %
+Kappa statistic                          0.0317
+Mean absolute error                      0.2876
+Root mean squared error                  0.5363
+Relative absolute error                 73.7212 %
+Root relative squared error            121.5462 %
+Total Number of Instances              306     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,938    0,914    0,740      0,938    0,827      0,042    0,512     0,740     1
+                 0,086    0,062    0,333      0,086    0,137      0,042    0,512     0,271     2
+Weighted Avg.    0,712    0,688    0,633      0,712    0,645      0,042    0,512     0,616     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 211  14 |   a = 1
+  74   7 |   b = 2
+
